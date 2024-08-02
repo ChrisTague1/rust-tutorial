@@ -16,6 +16,7 @@ pub fn run() {
     thread::spawn(move || println!("From thread: {:?}", list))
         .join()
         .unwrap();
+    // println!("Before closure: {:?}", list);
 
     // --------------------------------------
 
